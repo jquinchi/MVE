@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1464260820 source:/home/joelqo/Documentos/ITM/VISION ARTIFICIAL/PROGRAMAS/Proyecto/MVE/filtroTemporal/main.cpp
+	<iostream>
+	<opencv.hpp>
+
