@@ -19,20 +19,15 @@ int main()
     VideoCapture video(0);
     while(1){
         video >> img;
+        img.convertTo(img,CV_32FC3,1.0/255.0f);
         fltrEspacial(img);
 
         pasabajo1=piramide;
         pasabajo2=piramide;
         filtrado = piramide;
-
         for(int i=0;i<capa;i++)
         {
 
-            hconcat(img,piramide[0],imgOut);
-
-
-            namedWindow("Resultado",WINDOW_AUTOSIZE);
-            imshow("Resultado",imgOut);
             //fltrTemporal(piramide[i],filtrado[i],i);
             Mat temp1,temp2,temp3;
             temp3 = piramide.at(i);
@@ -44,6 +39,11 @@ int main()
             pasabajo2[i] = temp2;
             filtrado.at(i) = pasabajo1[i]-pasabajo2[i];
         }
+        hconcat(img,piramide[0],imgOut);
+
+
+        namedWindow("Resultado",WINDOW_AUTOSIZE);
+        imshow("Resultado",imgOut);
 
         if(waitKey(30)>=0) break;
     }
