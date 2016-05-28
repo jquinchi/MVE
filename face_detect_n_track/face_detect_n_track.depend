@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1464414472 source:/home/joel/Documentos/ITM/VISION/PROYECTO/ALGORITMO/MVE/face_detect_n_track/main.cpp
+	<highgui/highgui.hpp>
+	<objdetect.hpp>
+	<opencv.hpp>
+	<video/tracking.hpp>
+	<iostream>
+

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1464414472 source:/home/joel/Documentos/ITM/VISION/PROYECTO/ALGORITMO/MVE/DetecFacial/main.cpp
+	"opencv2/objdetect/objdetect.hpp"
+	"opencv2/highgui/highgui.hpp"
+	"opencv2/imgproc/imgproc.hpp"
+	"opencv.hpp"
+	<iostream>
+	<stdio.h>
+
